@@ -1,8 +1,8 @@
 package practice_homework;
 
 public class Book {
-    String title;
-    String author;
+    public String title;
+    public String author;
     public Book(String someTitle, String someAuthor){
         this.title = someTitle;
         this.author = someAuthor;

@@ -1,5 +1,6 @@
 package practice2;
 
+
 public class Main {
     public static void main(String[] args) {
         // проверка дефолтного конструктора (по умолчанию)
@@ -9,6 +10,5 @@ public class Main {
         petya.setAge(1111);
         petya.print();
         kolyan.print();
-
     }
 }

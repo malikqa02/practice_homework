@@ -41,6 +41,9 @@ public class Main {
         Product bread = new Product("хлеб", 200);
         bread.applyDiscount(50);
         bread.printInfo();
+        Product milk = new Product("молоко", 230);
+        milk.printInfo();
+        bread.printInfo();
         //laptop
         Laptop macbook = new Laptop("Apple MacBook", 100000);
         macbook.setPrice(120000);
