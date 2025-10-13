@@ -64,7 +64,8 @@ public class Switch {
             case 8 -> convertedGrade = "B";
             case 7 -> convertedGrade = "C";
             case 6 -> convertedGrade = "D";
-            default -> convertedGrade = "F";
+            case 5 -> convertedGrade = "F";
+            default -> System.out.println("Несуществующая оценка");
         }
         return convertedGrade;
     }

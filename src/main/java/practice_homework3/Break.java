@@ -7,7 +7,7 @@ public class Break {
         //System.out.print(sum());
         //oneToTwenty();
         //printPositiveNum();
-        command();
+        //command();
     }
     public static int sum() {
         Scanner scanner = new Scanner(System.in);
