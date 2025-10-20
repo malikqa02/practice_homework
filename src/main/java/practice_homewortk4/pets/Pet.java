@@ -1,10 +1,10 @@
-package practice_homewortk4.zoo;
+package practice_homewortk4.pets;
 
-public abstract class Animal {
+public abstract class Pet {
     private int age;
     private String name;
 
-    public Animal(int age, String name) {
+    public Pet(int age, String name) {
         this.age = age;
         this.name = name;
     }
@@ -13,20 +13,19 @@ public abstract class Animal {
         return age;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    abstract void makeSound();
+    abstract void eat();
 
-    abstract void move();
-
+    abstract void action();
 }

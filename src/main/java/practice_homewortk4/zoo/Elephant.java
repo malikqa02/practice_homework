@@ -1,17 +1,17 @@
 package practice_homewortk4.zoo;
 
 public class Elephant extends Animal {
-    public Elephant(int age, String name){
+    public Elephant(int age, String name) {
         super(age, name);
     }
 
     @Override
-    public String makeSound() {
-        return "trumpets";
+    public void makeSound() {
+        System.out.println("trumpets");
     }
 
     @Override
-    public String move() {
-        return "walks";
+    public void move() {
+        System.out.println("walks");
     }
 }

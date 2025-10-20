@@ -5,6 +5,10 @@ public class Main {
         Zoo zooMSC = new Zoo();
         Animal Max = new Elephant(12, "Max");
         Animal Eagle = new Bird(11, "Nick");
-        zooMSC.showBehavior(Eagle);
+        zooMSC.addAnimal(Max);
+        zooMSC.showBehavior();
+        zooMSC.removeAnimal();
+        zooMSC.addAnimal(Eagle);
+        //zooMSC.showBehavior();
     }
 }

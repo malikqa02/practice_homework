@@ -2,7 +2,11 @@ package practice_homewortk4.zoo;
 
 public class Zoo {
     private String name;
-    protected static int animalCount;
+    private Animal animal;
+
+    public Animal getAnimal() {
+        return animal;
+    }
 
     public String getName() {
         return name;
@@ -12,17 +16,19 @@ public class Zoo {
         this.name = name;
     }
 
-    public void setAnimalCount(int animalCount) {
-        this.animalCount = animalCount;
+    protected void addAnimal(Animal animal) {
+        this.animal = animal;
     }
 
-    public int getAnimalCount() {
-        return animalCount;
+    protected void removeAnimal() {
+        this.animal = null;
     }
-    protected void addAnimal(int newAnimalCount){
-        animalCount++;
-    }
-    public void showBehavior(Animal animal){
-        System.out.println("Animal name: " + animal.getName() + ", Animal sounds: " + animal.makeSound() + ", Animal move: " + animal.move());
+
+    public void showBehavior() {
+        System.out.println("Animal name: " + this.animal.getName());
+        System.out.print("Animal sounds: ");
+        this.animal.makeSound();
+        System.out.print("Animal move: ");
+        this.animal.move();
     }
 }

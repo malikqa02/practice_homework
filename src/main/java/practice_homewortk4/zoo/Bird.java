@@ -1,15 +1,17 @@
 package practice_homewortk4.zoo;
 
 public class Bird extends Animal {
-    public Bird (int age, String name) {
+    public Bird(int age, String name) {
         super(age, name);
     }
+
     @Override
-    String makeSound(){
-        return "tweets";
+    public void makeSound() {
+        System.out.println("tweets");
     }
+
     @Override
-    String move(){
-        return "fly";
+    public void move() {
+        System.out.println("fly");
     }
 }
