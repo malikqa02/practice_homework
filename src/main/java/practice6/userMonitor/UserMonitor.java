@@ -1,0 +1,27 @@
+package practice6.userMonitor;
+
+import java.util.HashSet;
+
+public class UserMonitor {
+    //хранение уникальных сессий
+    private HashSet<String> sessions;
+    public UserMonitor(){
+        this.sessions = new HashSet<>();
+    }
+    public void addNewSession(String session){
+        sessions.add(session);
+    }
+    //доступ к сессиям
+    public HashSet<String> getSessions(){
+        return this.sessions;
+    }
+
+    public void printSessions(){
+        System.out.println("Все уникальные сессии: ");
+        sessions.forEach(
+                sessions -> {
+                    System.out.println(sessions);
+                }
+        );
+    }
+}
