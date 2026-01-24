@@ -48,7 +48,7 @@ public class FindMaxTest {
     public void userCanPassNull(){
         assertThrows(NullPointerException.class,()  -> {
             findMaxNum.findMax(null);
-        }, "passing null as parameter leads to illegal arg exception");
+        }, "passing null as parameter leads to NullPointerException");
     }
 
 

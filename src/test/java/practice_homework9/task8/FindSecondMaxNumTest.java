@@ -12,8 +12,8 @@ public class FindSecondMaxNumTest {
     /**
      * Обычный массив: [3, 5, 7, 2] → findSecondMax() → 5
      * Массив с одинаковыми числами: [4, 4, 4, 4] → Должно выбрасываться NoSuchElementException.
-     * Один элемент: [8] → Должно выбрасываться NoSuchElementException.
-     * Пустой массив: [] → Должно выбрасываться NoSuchElementException.
+     * Один элемент: [8] → Должно выбрасываться IllegalArgumentException.
+     * Пустой массив: [] → Должно выбрасываться IllegalArgumentException.
      */
     @BeforeEach
     public void setUpTest() {
@@ -25,7 +25,7 @@ public class FindSecondMaxNumTest {
         int[] array = {3, 5, 7, 2};
         int expectedSecondMaxNum = 5;
         int secondMaxNum = findSecondMax.findSecondMaxNum(array);
-        assertEquals(secondMaxNum, expectedSecondMaxNum);
+        assertEquals(expectedSecondMaxNum, secondMaxNum);
     }
 
     @Test

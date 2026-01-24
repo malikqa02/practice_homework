@@ -1,4 +1,4 @@
-package practice_homework9.Task16;
+package practice_homework9.task16;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ public class SplitStringTest {
      * corner:
      * Вход: "", разделитель: "," → Выход: [""].
      * Вход: "word", разделитель: "," → Выход: ["word"].
-     * Вход: "word", разделитель: "" → Выход: ["J", "a", "v", "a"].
+     * Вход: "Java", разделитель: "" → Выход: ["J", "a", "v", "a"].
      */
 
     @BeforeEach

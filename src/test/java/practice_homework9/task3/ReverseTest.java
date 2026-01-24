@@ -7,6 +7,7 @@ import org.junit.jupiter.params.aggregator.ArgumentAccessException;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import java.util.NoSuchElementException;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -36,7 +37,6 @@ public class ReverseTest {
         return Stream.of(
                 Arguments.of("Java", "avaJ"),
                 Arguments.of("a", "a"),
-                Arguments.of(null, null),
                 Arguments.of("", ""));
     }
 
@@ -46,5 +46,11 @@ public class ReverseTest {
         String reversedString = stringReverser.reverse(initialString);
         assertEquals(expectedString, reversedString);
     }
-
+    
+    @Test
+    public void userCanReverseNullParameter(){
+        assertThrows(IllegalArgumentException.class, () -> {
+            stringReverser.reverse(null);
+        }, "reversing null parameter should lead to IllegalArgumentException");
+    }
 }

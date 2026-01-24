@@ -15,8 +15,8 @@ public class IsAnagramTest {
      * Вход: "java", "python" → Выход: false.
      * Строки не являются анаграммами, так как их символы не совпадают после сортировки.
      * null:
-     * Вход: null, "word" → Выход: false.
-     * Если одна из строк равна null, метод возвращает false.
+     * Вход: null, "word" → Выход: NullPointerException.
+     * Если одна из строк равна null, метод возвращает NullPointerException.
      */
     @BeforeEach
     public void setUpTest(){

@@ -25,7 +25,7 @@ public class IsValidPhoneNumberTest {
      * "+1 123" (недостаточно цифр) → false.
      * "" (пустая строка) → false.
      * null номер:
-     * null → Должно выбрасываться IllegalArgumentException.
+     * null → Должно выбрасываться NullPointerException.
      */
 
     @BeforeEach

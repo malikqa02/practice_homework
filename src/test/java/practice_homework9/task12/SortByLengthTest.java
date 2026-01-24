@@ -29,7 +29,7 @@ public class SortByLengthTest {
         List<String> initialList = new ArrayList<>(Arrays.asList("Java", "C", "Python"));
         List<String> expectedList = new ArrayList<>(Arrays.asList("C", "Java", "Python"));
         List<String> actualList = listSorter.sortByLength(initialList);
-        assertEquals(actualList, expectedList);
+        assertEquals(expectedList, actualList);
     }
 
     @Test
@@ -37,7 +37,7 @@ public class SortByLengthTest {
         List<String> initialList = new ArrayList<>(Arrays.asList("aa", "bb", "cc"));
         List<String> expectedList = new ArrayList<>(Arrays.asList("aa", "bb", "cc"));
         List<String> actualList = listSorter.sortByLength(initialList);
-        assertEquals(actualList, expectedList);
+        assertEquals(expectedList, actualList);
     }
 
     @Test
@@ -45,7 +45,7 @@ public class SortByLengthTest {
         List<String> initialList = new ArrayList<>();
         List<String> expectedList = new ArrayList<>();
         List<String> actualList = listSorter.sortByLength(initialList);
-        assertEquals(actualList, expectedList);
+        assertEquals(expectedList, actualList);
     }
 
 }

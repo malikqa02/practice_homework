@@ -28,14 +28,14 @@ public class CountVowelsTest {
     public void userCanCountVowelsOfValidStringWith2Vowels() {
         int actualResult = vowelsCounter.countVowels("hello");
         int expectedResult = 2;
-        assertEquals(actualResult, expectedResult);
+        assertEquals(expectedResult, actualResult);
     }
 
     @Test
     public void userCanCountVowelsOfValidStringWith5Vowels() {
         int actualResult = vowelsCounter.countVowels("aieou");
         int expectedResult = 5;
-        assertEquals(actualResult, expectedResult);
+        assertEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -49,13 +49,13 @@ public class CountVowelsTest {
     public void userCanCountVowelsOfEmptyString() {
         int actualResult = vowelsCounter.countVowels("");
         int expectedResult = 0;
-        assertEquals(actualResult, expectedResult);
+        assertEquals(expectedResult, actualResult);
     }
 
     @Test
     public void userCanCountVowelsOfValidStringWithNoVowels() {
         int actualResult = vowelsCounter.countVowels("bcd");
         int expectedResult = 0;
-        assertEquals(actualResult, expectedResult);
+        assertEquals(expectedResult, actualResult);
     }
 }
