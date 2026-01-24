@@ -5,7 +5,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collectors;
 
 public class EntityManager<T extends Entity> { //это чтобы была гарантия что всегда будет name, age, isactive. не нужно делать дополнительную валидацию, что есть такое поле и тд
-    private CopyOnWriteArrayList<T> entities = new CopyOnWriteArrayList<>();
+    private CopyOnWriteArrayList<T> entities = new CopyOnWriteArrayList<>(); //потокобезопасный arraylist
 
     public void add(T entity) {
         entities.add(entity);
