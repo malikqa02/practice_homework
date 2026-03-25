@@ -1,8 +1,6 @@
-package practice_homework11;
+package practice_homework11.task1;
 
 import org.junit.jupiter.api.Test;
-import practice_homework11.task1.EntityManager;
-import practice_homework11.task1.Student;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;

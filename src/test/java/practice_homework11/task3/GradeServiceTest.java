@@ -1,10 +1,7 @@
-package practice_homework11;
+package practice_homework11.task3;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import practice_homework11.task3.GradeService;
-import practice_homework11.task3.InvalidGradeException;
-import practice_homework11.task3.StudentGrade;
 
 import static org.junit.jupiter.api.Assertions.*;
 

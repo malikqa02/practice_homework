@@ -1,12 +1,8 @@
-package practice_homework11;
+package practice_homework11.task2;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import practice_homework11.task2.InvalidUserException;
-import practice_homework11.task2.User;
-import practice_homework11.task2.UserValidator;
 
 import java.util.stream.Stream;
 
